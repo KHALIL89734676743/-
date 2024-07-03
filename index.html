@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة حرب البطاقات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .player {
+            margin: 20px;
+        }
+        .card {
+            font-size: 24px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>لعبة حرب البطاقات</h1>
+    <div class="container">
+        <div class="player" id="player1">
+            <h2>اللاعب 1</h2>
+            <div class="card" id="player1Card">?</div>
+        </div>
+        <div class="player" id="player2">
+            <h2>اللاعب 2</h2>
+            <div class="card" id="player2Card">?</div>
+        </div>
+    </div>
+    <button onclick="playRound()">العب جولة</button>
+    <div id="winner"></div>
+    <script src="game.js"></script>
+</body>
+</html>
